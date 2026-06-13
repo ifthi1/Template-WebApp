@@ -1,4 +1,4 @@
-# Project Name
+# WebApp Template
 
 ## Author(s)
 - Ifthi
