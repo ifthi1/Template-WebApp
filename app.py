@@ -30,9 +30,9 @@ def user_loader(name):
         return None
     return User(record[0], record[1], record[2])
 
-path = "chat.db" 
+path = "users.db" 
 database_exists = os.path.isfile(path)
-db = sqlite3.connect("chat.db")
+db = sqlite3.connect("users.db")
 if not database_exists: 
     db.execute("CREATE TABLE Users (id INTEGER PRIMARY KEY AUTOINCREMENT, username VARCHAR(255), password VARCHAR(32))")
     db.execute("INSERT INTO Users (username, password) VALUES('Ifthi', '1234')")
