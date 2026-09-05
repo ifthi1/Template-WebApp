@@ -44,7 +44,7 @@ if not database_exists:
 def get_db():
   db = g.get("_database")
   if not db:
-    db = sqlite3.connect("chat.db")
+    db = sqlite3.connect("users.db")
     g._database = db
   return db
 
